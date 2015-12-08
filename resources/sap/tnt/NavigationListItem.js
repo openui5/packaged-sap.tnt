@@ -17,7 +17,7 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 		 * @extends sap.ui.core.Item
 		 *
 		 * @author SAP SE
-		 * @version 1.34.0
+		 * @version 1.34.1
 		 *
 		 * @constructor
 		 * @public
@@ -406,7 +406,9 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 					rm.writeAttribute("role", 'option');
 				} else {
 					rm.writeAttribute("role", 'treeitem');
-					rm.writeAttribute("aria-expanded", this.getExpanded());
+					if (this.getItems().length > 0) {
+						rm.writeAttribute("aria-expanded", this.getExpanded());
+					}
 					rm.writeAttribute("aria-level", 1);
 				}
 
