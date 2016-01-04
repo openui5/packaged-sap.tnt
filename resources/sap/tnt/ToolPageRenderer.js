@@ -1,6 +1,6 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 
@@ -49,7 +49,7 @@ sap.ui.define([],
 
 			rm.write('<div class="sapTntToolPageContentWrapper');
 
-			if (isScreenSizeForPhone || isScreenSizeForTablet) {
+			if (isScreenSizeForPhone || isScreenSizeForTablet || !control.getSideExpanded()) {
 				rm.write(' sapTntToolPageAsideCollapsed');
 			}
 
@@ -89,16 +89,18 @@ sap.ui.define([],
 		ToolPageRenderer.renderMainContent = function (rm, control) {
 			var mainContentAggregations = control.getAggregation('mainContents');
 
-			rm.write('<div id="' + control.getId() + '-main" class="sapTntToolPageMain">');
+			if (mainContentAggregations) {
+				rm.write('<div id="' + control.getId() + '-main" class="sapTntToolPageMain">');
 
-			rm.write('<div class="sapTntToolPageMainContent">');
-			rm.write('<div class="sapTntToolPageMainContentWrapper">');
-			mainContentAggregations.forEach(rm.renderControl);
-			rm.renderControl();
-			rm.write('</div>');
-			rm.write('</div>');
+				rm.write('<div class="sapTntToolPageMainContent">');
+				rm.write('<div class="sapTntToolPageMainContentWrapper">');
+				mainContentAggregations.forEach(rm.renderControl);
+				rm.renderControl();
+				rm.write('</div>');
+				rm.write('</div>');
 
-			rm.write('</div>');
+				rm.write('</div>');
+			}
 		};
 
 		return ToolPageRenderer;

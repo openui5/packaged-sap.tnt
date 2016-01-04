@@ -1,11 +1,11 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /* =========================== */
@@ -18,11 +18,11 @@
 /* TMP during LESS convertion ---- to be deleted */
 /* may be required by SubstitutionRulesManager.css in inbox lib */
 /* ---------------------------------------------------------------------------------------- */
-/** 
+/**
   * This parameter is used in the Shell control to calculate the size when it grows.
-  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
   */
-/** 
+/**
   * This parameter is used in the Shell control to calculate the size of the margin when showing
   * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
   * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
@@ -39,20 +39,20 @@
 /*make small margin themable*/
 /*make medium margin themable*/
 /*make large margin themable*/
-/* 
+/*
  * This is a mixin for creating the predefined container content padding
  * classes:
  * sapUiNoContainerContentPadding
  * sapUiContainerContentPadding
  * sapUiResponsiveContainerContentPadding
- * These classes can be set on many UI5 containers and will 
- * add padding inside the container's content padding based 
+ * These classes can be set on many UI5 containers and will
+ * add padding inside the container's content padding based
  * on the selectors that are arguments for this mixin.
  *
  * Arguments to this function-like mixin are the rootClass selector and
  * the content selector where the padding should be applied.
  */
-/* 
+/*
   * the sapLess-parser has problems with an escaped string as default value for the parameterized mixin
   * therefore we need to temporarily use a parameter assigning the default value
   */
@@ -221,10 +221,6 @@
   overflow: hidden;
   box-sizing: border-box;
 }
-.sapTntSideNavigationFlexibleContent {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
 .sapTntSideNavigationSeparator {
   margin: 0.25rem 1rem;
   height: 1px;
@@ -363,7 +359,7 @@
 }
 .sap-desktop .sapTntToolPageMain,
 .sap-tablet .sapTntToolPageMain {
-  transform: translateX(20rem);
+  padding-right: 20rem;
 }
 .sap-desktop .sapTntToolPageAsideCollapsed .sapTntToolPageAside,
 .sap-tablet .sapTntToolPageAsideCollapsed .sapTntToolPageAside {
@@ -371,9 +367,7 @@
 }
 .sap-desktop .sapTntToolPageAsideCollapsed .sapTntToolPageMain,
 .sap-tablet .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
-  -webkit-transform: translateX(3rem);
-  -ms-transform: translateX(3rem);
-  transform: translateX(3rem);
+  padding-right: 3rem;
 }
 .sap-phone .sapTntToolPageAside {
   width: 20rem;
@@ -450,7 +444,7 @@
 }
 .sap-desktop .sapUiSizeCompact .sapTntToolPageMain,
 .sap-tablet .sapUiSizeCompact .sapTntToolPageMain {
-  transform: translateX(16rem);
+  padding-right: 16rem;
 }
 .sap-desktop .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageAside,
 .sap-tablet .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageAside {
@@ -458,9 +452,7 @@
 }
 .sap-desktop .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain,
 .sap-tablet .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
-  -webkit-transform: translateX(2rem);
-  -ms-transform: translateX(2rem);
-  transform: translateX(2rem);
+  padding-right: 2rem;
 }
 .sap-phone .sapUiSizeCompact .sapTntToolPageAside {
   width: 16rem;
@@ -475,44 +467,40 @@
   -ms-transform: translateX(-16rem);
   transform: translateX(-16rem);
 }
+.sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
 /* ==========================================================================
    RTL
    ========================================================================== */
-html[dir=rtl].sap-desktop .sapTntToolPageMain,
-html[dir=rtl].sap-tablet .sapTntToolPageMain {
+html[dir=rtl].sap-phone .sapTntToolPageMain {
   -webkit-transform: translateX(-20rem);
   -ms-transform: translateX(-20rem);
   transform: translateX(-20rem);
 }
-html[dir=rtl].sap-desktop .sapTntToolPageAsideCollapsed .sapTntToolPageMain,
-html[dir=rtl].sap-tablet .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
-  -webkit-transform: translateX(-3rem);
-  -ms-transform: translateX(-3rem);
-  transform: translateX(-3rem);
+html[dir=rtl].sap-phone .sapTntToolPageAsideCollapsed .sapTntToolPageAside {
+  -webkit-transform: translateX(20rem);
+  -ms-transform: translateX(20rem);
+  transform: translateX(20rem);
 }
-html[dir=rtl].sap-desktop .sapUiSizeCompact .sapTntToolPageMain,
-html[dir=rtl].sap-tablet .sapUiSizeCompact .sapTntToolPageMain {
-  -webkit-transform: translateX(-16rem);
-  -ms-transform: translateX(-16rem);
-  transform: translateX(-16rem);
-}
-html[dir=rtl].sap-desktop .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain,
-html[dir=rtl].sap-tablet .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
-  -webkit-transform: translateX(-2rem);
-  -ms-transform: translateX(-2rem);
-  transform: translateX(-2rem);
+html[dir=rtl].sap-phone .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageMain {
   -webkit-transform: translateX(-16rem);
   -ms-transform: translateX(-16rem);
   transform: translateX(-16rem);
 }
-html[dir=rtl].sap-phone .sapTntToolPageAsideCollapsed .sapTntToolPageAside {
+html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageAside {
   -webkit-transform: translateX(16rem);
   -ms-transform: translateX(16rem);
   transform: translateX(16rem);
 }
-html[dir=rtl].sap-phone .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
+html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntToolPageMain {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);

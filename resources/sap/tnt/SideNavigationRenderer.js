@@ -1,6 +1,6 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 
@@ -83,7 +83,7 @@ sap.ui.define([],
         SideNavigationRenderer.renderItem = function (rm, control) {
             var itemAggregation = control.getAggregation('item');
 
-            rm.write('<div id="' + control.getId() + '-Flexible" class="sapTntSideNavigationFlexible sapTntSideNavigationVerticalScrolling">');
+            rm.write('<div id="' + control.getId() + '-Flexible" tabindex="-1" class="sapTntSideNavigationFlexible sapTntSideNavigationVerticalScrolling">');
             rm.write('<div id="' + control.getId() + '-Flexible-Content" class="sapTntSideNavigationFlexibleContent">');
             rm.renderControl(itemAggregation);
             rm.write('</div></div>');
