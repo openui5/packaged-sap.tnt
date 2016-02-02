@@ -102,9 +102,6 @@
 .sapTntNavLIGroupItem > .sapMText {
   padding-right: 3rem;
 }
-.sapTntNavLIPopup {
-  margin: 2px;
-}
 .sapTntNavLIPopup .sapTntNavLIGroupItem > .sapMText {
   padding: 0 1rem;
 }
@@ -144,6 +141,10 @@
 }
 .sapTntNavLICollapsed {
   width: 3rem;
+}
+.sapTntNavLI li,
+.sapTntNavLIItem {
+  position: relative;
 }
 /* Compact size */
 .sapUiSizeCompact .sapTntNavLIItem {
@@ -524,8 +525,8 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 /* Derived Chart Colors */
 /* Shell */
 /* NotificationBar */
-/* RatingIndicator */
 /* ToolPopup */
+/* RatingIndicator */
 /* DateTimeInput Custom Picker JavaScript	  */
 /* mixed, scroller, clickpick */
 /* mixed, scroller, clickpick */
@@ -596,8 +597,19 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 }
 .sapTntNavLI li:focus,
 .sapTntNavLIItem:focus {
-  outline: 0.125rem dotted #ffffff;
-  outline-offset: -1px;
+  outline: none;
+}
+.sapTntNavLI li:focus::before,
+.sapTntNavLIItem:focus::before {
+  border: 0.125rem dotted #ffffff;
+  position: absolute;
+  content: " ";
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  z-index: 2;
+  pointer-events: none;
 }
 /* ============================================ */
 /* CSS for control sap.tnt/ToolHeader.control	*/

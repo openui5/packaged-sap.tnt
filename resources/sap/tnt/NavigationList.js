@@ -21,7 +21,7 @@ sap.ui.define(['jquery.sap.global', './library', 'sap/ui/core/Control', 'sap/m/P
 		 * @extends sap.ui.core.Control
 		 *
 		 * @author SAP SE
-		 * @version 1.36.0
+		 * @version 1.36.1
 		 *
 		 * @constructor
 		 * @public
@@ -227,7 +227,7 @@ sap.ui.define(['jquery.sap.global', './library', 'sap/ui/core/Control', 'sap/m/P
 		NavigationList.prototype._openPopover = function (source, list) {
 
 			var selectedItem = list.getSelectedItem();
-			if (selectedItem && selectedItem.getMetadata().getName() == 'sap.tnt.NavigationListItem') {
+			if (selectedItem && list.isGroupSelected) {
 				selectedItem = null;
 			}
 

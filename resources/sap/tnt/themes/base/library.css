@@ -97,9 +97,6 @@
 .sapTntNavLIGroupItem > .sapMText {
   padding-left: 3rem;
 }
-.sapTntNavLIPopup {
-  margin: 2px;
-}
 .sapTntNavLIPopup .sapTntNavLIGroupItem > .sapMText {
   padding: 0 1rem;
 }
@@ -139,6 +136,10 @@
 }
 .sapTntNavLICollapsed {
   width: 3rem;
+}
+.sapTntNavLI li,
+.sapTntNavLIItem {
+  position: relative;
 }
 /* Compact size */
 .sapUiSizeCompact .sapTntNavLIItem {
