@@ -203,6 +203,10 @@
 .sapTntSideNavigationNotExpanded {
   max-width: 3rem;
 }
+.sapTntSideNavigationNotExpanded .sapTntNavLIText,
+.sapTntSideNavigationNotExpanded .sapTntNavLIExpandIcon {
+  display: none;
+}
 .sapTntSideNavigationNotExpanded .sapTntSideNavigationSeparator {
   margin: 0.25rem 0.5rem;
 }
