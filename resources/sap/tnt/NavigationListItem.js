@@ -17,7 +17,7 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 		 * @extends sap.ui.core.Item
 		 *
 		 * @author SAP SE
-		 * @version 1.36.8
+		 * @version 1.36.9
 		 *
 		 * @constructor
 		 * @public
@@ -350,7 +350,7 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 			}
 
 			// first navigation level
-			if (navList.getExpanded()) {
+			if (navList.getExpanded() || this.getItems().length == 0) {
 
 				if (!source || source.getMetadata().getName() != 'sap.ui.core.Icon' || !source.$().hasClass('sapTntNavLIExpandIcon')) {
 					this._selectItem(event);
