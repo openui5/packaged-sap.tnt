@@ -120,9 +120,21 @@
   /* IE 10+ */
   user-select: none;
 }
+.sapTntNavLI img.sapTntNavLIGroupIcon {
+  height: 1.125rem;
+  width: 1.125rem;
+  padding: 0.6875rem 0.9375rem;
+}
 .sapTntNavLIPopup .sapTntNavLIGroupIcon {
   width: 1rem;
   visibility: hidden;
+  min-width: 0;
+}
+.sapTntNavLIPopup img.sapTntNavLIGroupIcon {
+  width: 1rem;
+  visibility: hidden;
+  min-width: 0;
+  padding: 0;
 }
 .sapTntNavLI .sapTntNavLIExpandIcon {
   width: 2rem;
@@ -159,11 +171,14 @@
 .sapUiSizeCompact .sapTntNavLIPopup .sapTntNavLIGroup > .sapMText {
   margin: 0 0 0 0.5rem;
 }
-.sapUiSizeCompact .sapTntNavLI .sapTntNavLIGroupIcon {
+.sapUiSizeCompact .sapTntNavLI span.sapTntNavLIGroupIcon {
   width: 2rem;
   padding: 0.5rem 0;
 }
-.sapUiSizeCompact .sapTntNavLIPopup .sapTntNavLIGroupIcon {
+.sapUiSizeCompact .sapTntNavLI img.sapTntNavLIGroupIcon {
+  padding: 0.5rem 0.4375rem;
+}
+.sapUiSizeCompact .sapTntNavLIPopup span.sapTntNavLIGroupIcon {
   width: 0.5rem;
 }
 .sapUiSizeCompact .sapTntNavLI .sapTntNavLIExpandIcon {
