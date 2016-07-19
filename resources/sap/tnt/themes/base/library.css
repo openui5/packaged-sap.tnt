@@ -43,10 +43,7 @@
   cursor: auto;
 }
 .sapTntNavLIText {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex: 1 1;
-  flex-grow: 1;
+  width: 100%;
   display: block;
 }
 .sapTntNavLIGroupItem > .sapMText {
@@ -78,12 +75,12 @@
 .sapTntNavLIPopup span.sapTntNavLIGroupIcon {
   width: 1rem;
   visibility: hidden;
-  min-width: 0;
+  min-width: 1rem;
 }
 .sapTntNavLIPopup img.sapTntNavLIGroupIcon {
   width: 1rem;
   visibility: hidden;
-  min-width: 0;
+  min-width: 1rem;
   padding: 0;
 }
 .sapTntNavLI .sapTntNavLIExpandIcon {
@@ -131,7 +128,7 @@
 }
 .sapUiSizeCompact .sapTntNavLIPopup span.sapTntNavLIGroupIcon {
   width: 0.5rem;
-  min-width: 0;
+  min-width: 0.5rem;
 }
 .sapUiSizeCompact .sapTntNavLI .sapTntNavLIExpandIcon {
   min-width: 2rem;
