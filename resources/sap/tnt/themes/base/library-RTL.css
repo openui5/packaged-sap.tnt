@@ -147,6 +147,9 @@
 .sapTntToolHeaderPopover.sapMOTAPopover.sapMPopover .sapMPopoverCont .sapMPopoverScroll .sapMBtn {
   padding: 0;
 }
+.sapTntToolHeader.sapMTB {
+  height: 3rem;
+}
 /* ==========================================================================
    CSS for control sap.tnt.SideNavigation
    ========================================================================== */
@@ -415,7 +418,7 @@ html:not([data-sap-ui-animation='off']) .sapTntToolPageAside {
 }
 /* Compact size */
 .sapUiSizeCompact .sapTntToolPageHeader {
-  height: 2rem;
+  height: 3rem;
 }
 .sapUiSizeCompact .sapTntToolPageAsideFooter {
   height: 2rem;
