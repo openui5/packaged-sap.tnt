@@ -547,7 +547,7 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
 .sapTntNavLIItem:focus {
   outline: none;
 }
-.sapTntNavLI li:focus::before,
+.sapTntNavLI li:focus > .sapTntNavLIItem::before,
 .sapTntNavLIItem:focus::before {
   border: 0.125rem dotted #ffffff;
   position: absolute;
