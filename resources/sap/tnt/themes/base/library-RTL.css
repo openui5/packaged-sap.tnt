@@ -287,6 +287,7 @@
   -webkit-flex-grow: 1;
   -ms-flex: 1 1;
   flex-grow: 1;
+  max-height: calc(100% - 3rem);
   position: relative;
 }
 /* Aside container
