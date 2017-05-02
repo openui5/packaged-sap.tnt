@@ -361,6 +361,7 @@ html[data-sap-ui-browser^="ed"].sap-desktop .sapTntNavLIItem:focus::before {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  max-height: calc(100% - 3rem);
   position: relative;
 }
 /* Aside container
