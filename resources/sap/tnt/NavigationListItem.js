@@ -17,7 +17,7 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 		 * @extends sap.ui.core.Item
 		 *
 		 * @author SAP SE
-		 * @version 1.48.3
+		 * @version 1.48.4
 		 *
 		 * @constructor
 		 * @public
@@ -675,7 +675,7 @@ sap.ui.define(["jquery.sap.global", "./library", "sap/ui/core/Item",
 
 			var $this = this.$();
 
-			domRefs.push($this[0]);
+			domRefs.push($this.find('.sapTntNavLIGroup')[0]);
 
 			if (this.getExpanded()) {
 				var subItems = $this.find('.sapTntNavLIGroupItem');
