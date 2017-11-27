@@ -28,7 +28,7 @@ sap.ui.define(['jquery.sap.global', './library', 'sap/ui/core/Control',
 		 * @extends sap.m.OverflowToolbar
 		 *
 		 * @author SAP SE
-		 * @version 1.38.30
+		 * @version 1.38.31
 		 *
 		 * @constructor
 		 * @public
