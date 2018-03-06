@@ -28,7 +28,7 @@ sap.ui.define(['jquery.sap.global', './library', 'sap/ui/core/Control', 'sap/ui/
 		 * @extends sap.ui.core.Control
 		 *
 		 * @author SAP SE
-		 * @version 1.52.7
+		 * @version 1.52.8
 		 *
 		 * @constructor
 		 * @public
@@ -251,7 +251,9 @@ sap.ui.define(['jquery.sap.global', './library', 'sap/ui/core/Control', 'sap/ui/
 
 			if (selectedInFlexibleList) {
 				navigationList.setSelectedItem(listItemToSelect, suppressInvalidate);
-				fixedNavigationList.setSelectedItem(null, true);
+				if (fixedNavigationList) {
+					fixedNavigationList.setSelectedItem(null, true);
+				}
 			}
 
 			if (selectedInFixedList) {
