@@ -42,7 +42,7 @@ sap.ui.define([
 		 * @extends sap.ui.core.Control
 		 *
 		 * @author SAP SE
-		 * @version 1.54.1
+		 * @version 1.54.2
 		 *
 		 * @constructor
 		 * @public
@@ -265,7 +265,9 @@ sap.ui.define([
 
 			if (selectedInFlexibleList) {
 				navigationList.setSelectedItem(listItemToSelect, suppressInvalidate);
-				fixedNavigationList.setSelectedItem(null, true);
+				if (fixedNavigationList) {
+					fixedNavigationList.setSelectedItem(null, true);
+				}
 			}
 
 			if (selectedInFixedList) {
