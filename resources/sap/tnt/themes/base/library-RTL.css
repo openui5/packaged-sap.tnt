@@ -577,11 +577,7 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
   border-radius: 1.125rem;
   height: 1.125rem;
   display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   max-width: 100%;
-  line-height: 100%;
 }
 .sapTntInfoLabel .sapTntInfoLabelInner {
   font-size: 0.75rem;
@@ -590,6 +586,11 @@ html[dir=rtl].sap-phone .sapUiSizeCompact .sapTntToolPageAsideCollapsed .sapTntT
   font-weight: 600;
   letter-spacing: 0.0125rem;
   text-transform: uppercase;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
 }
 .sapTntInfoLabelRenderModeNarrow {
   padding: 0 0.3125rem;
