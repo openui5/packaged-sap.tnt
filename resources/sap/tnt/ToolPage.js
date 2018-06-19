@@ -25,7 +25,7 @@ sap.ui.define(['./library', 'sap/ui/core/Control', 'sap/ui/Device', 'sap/ui/core
 		 * @extends sap.ui.core.Control
 		 *
 		 * @author SAP SE
-		 * @version 1.52.14
+		 * @version 1.52.15
 		 *
 		 * @constructor
 		 * @public
