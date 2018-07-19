@@ -44,7 +44,7 @@ sap.ui.define([
 		 * @extends sap.m.OverflowToolbar
 		 *
 		 * @author SAP SE
-		 * @version 1.56.3
+		 * @version 1.56.4
 		 *
 		 * @constructor
 		 * @public
