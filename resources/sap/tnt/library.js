@@ -22,14 +22,14 @@ sap.ui.define([
 	 * @namespace
 	 * @name sap.tnt
 	 * @author SAP SE
-	 * @version 1.56.5
+	 * @version 1.56.6
 	 * @public
 	 */
 
 	// delegate further initialization of this library to the Core
 	sap.ui.getCore().initLibrary({
 		name : "sap.tnt",
-		version: "1.56.5",
+		version: "1.56.6",
 		dependencies : ["sap.ui.core", "sap.m"],
 		types: [
 			"sap.tnt.RenderMode",
