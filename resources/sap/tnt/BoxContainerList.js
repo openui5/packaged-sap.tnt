@@ -35,7 +35,7 @@ sap.ui.define([
 	 * Disclaimer: this control is in beta state - incompatible API changes may be done before its official public release. Use at your own discretion.
 	 *
 	 * @author SAP SE
-	 * @version 1.56.6
+	 * @version 1.56.7
 	 *
 	 * @constructor
 	 * @private
