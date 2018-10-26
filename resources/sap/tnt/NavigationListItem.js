@@ -17,7 +17,7 @@ sap.ui.define(["./library", "sap/ui/core/Item", 'sap/ui/core/Icon',
 		 * @extends sap.ui.core.Item
 		 *
 		 * @author SAP SE
-		 * @version 1.58.4
+		 * @version 1.58.5
 		 *
 		 * @constructor
 		 * @public
